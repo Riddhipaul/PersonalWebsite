@@ -1,0 +1,336 @@
+
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+
+body
+{
+    background-color: rgb(10, 10, 10);
+    color:antiquewhite;
+}
+
+.wrapper
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/****browser animation***********/
+.wrapper .box
+{
+    width:60px;
+    height: 60px;
+    border: 10px solid rgba(158, 145, 145, 0.786);
+    position: absolute;
+
+}
+
+
+.wrapper .box:nth-child(1)
+{
+    top:10%;
+    left: 90%;
+    animation:square 10s linear infinite;
+}
+
+.wrapper .box:nth-child(2)
+{
+    top:80%;
+    left: 95%;
+    animation:square 10s linear infinite;
+}
+
+
+
+
+.wrapper .box:nth-child(3)
+{
+    top:30%;
+    left: 95%;
+    animation:square 10s linear infinite;
+}
+
+.wrapper .box:nth-child(4)
+{
+    top:65%;
+    left: 71%;
+    animation:square 10s linear infinite;
+}
+
+
+.wrapper .box:nth-child(9)
+{
+    top:20%;
+    left: 46%;
+    animation:square 10s linear infinite;
+}
+
+.wrapper .box:nth-child(5)
+{
+    top:60%;
+    left: 5%;
+    animation:square 10s linear infinite;
+}
+
+.wrapper .box:nth-child(6)
+{
+    top:70%;
+    left: 45%;
+    animation:square 10s linear infinite;
+}
+
+
+.wrapper .box:nth-child(7)
+{
+    top:38%;
+    left: -2%;
+    animation:square 10s linear infinite;
+}
+
+.wrapper .box:nth-child(8)
+{
+    top:-7%;
+    left: -1%;
+    animation:square 10s linear infinite;
+}
+
+@keyframes square
+{
+    0%
+    {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+/***********box animation ends here***/
+
+.home
+{
+    width:100%;
+    
+}
+
+.home .container
+{
+    height:500px;
+ 
+    display: flex;
+    color:antiquewhite;
+}
+
+.home .desc
+{
+    margin-top:10%;
+    padding:5%;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color:aliceblue;
+    
+}
+
+
+.container button
+{
+    margin-top:10px;
+    font-size:15px;
+    padding:2px;
+    border: 2px solid pink;
+    cursor: pointer;
+    width:250px;
+    height:50px;
+    border-radius: 20px;
+}
+
+button:hover
+{
+    background-color: rgba(113, 43, 226, 0.959);
+}
+.container .image-content img
+{
+    height: 50%;
+    /*border:2px solid pink;*/
+    border-radius: 200px;
+    box-sizing: border-box;
+}
+/************************************ ---ABOUT Me Statrs here-----******************************************/
+
+
+.main
+{
+    
+    margin: auto;
+    width:100%;
+    margin-top:8%;
+ 
+    
+}
+
+.aboutme h2,h1
+{
+    text-align: center;
+}
+
+
+
+.aboutme p
+{
+    margin: 0px;
+}
+
+
+.myskills
+{
+    padding:20px;
+}
+
+.myskills p
+{
+    text-align: center;
+}
+
+.myskills .item
+{
+    margin:10px;
+}
+
+.moreinfo
+{
+    padding:20px;
+    font-size: 20px;
+}
+
+.progress-bar
+{
+    background-color: darkorange;
+}
+/************************************ ---PORTFOLIO Statrs here-----******************************************/
+
+
+
+.portfolio .main
+{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.portfolio h2
+{
+    text-align: center;
+}
+.portfolio .col-md-4
+{
+    text-align: center;
+    
+    box-sizing: border-box;
+    /*box-shadow: 3px 4px 8px 2px rgb(231, 139, 139);*/
+    text-decoration: none;
+    padding:3px;
+
+    box-sizing: border-box;
+}
+
+.portfolio .row
+{
+    box-sizing: border-box;
+    margin:0px;
+    padding:20px;
+    
+}
+
+.portfolio .project
+{
+    background-color: whitesmoke;
+    border:7px solid rgba(245, 245, 245, 0.529);
+    height: 20rem;
+    border-radius:10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:10px;
+    box-shadow: rgba(114, 78, 171, 0.959);
+}
+
+.project img
+{
+    width:98%;
+    height:100%;
+}
+
+.project img:hover
+{
+    background-color: black;
+}
+
+
+@media (max-width:991px) and (min-width:601px)
+{
+    .container .image-content img
+    {
+        height: 100%;
+        width:90%;
+        /*border:2px solid pink;*/
+        border-radius: 200px;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+
+@media (max-width:600px) and (min-width:401px) 
+{
+    .container .image-content
+    {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    height: 12%;
+    border: 2px solid black;
+    border-radius: 97px;
+    }
+
+    .home .desc
+    {
+        margin-top:25%;
+        padding:1%;
+    }
+  
+   
+}
+
+
+@media (max-width:400px) 
+{
+    .container .image-content
+    {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        height: 10%;
+        border: 2px solid black;
+    }
+
+    .home .desc
+    {
+        margin-top:15%;
+        padding:1%;
+    }
+
+ 
+
+    
+
+}
+
+
