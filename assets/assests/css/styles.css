@@ -113,7 +113,9 @@ body
         opacity: 0;
     }
 }
-/***********box animation ends here***/
+
+
+/***********-------------------------    HOME Starts here        ----------------------------------------******/
 
 .home
 {
@@ -164,6 +166,8 @@ button:hover
     border-radius: 200px;
     box-sizing: border-box;
 }
+
+
 /************************************ ---ABOUT Me Statrs here-----******************************************/
 
 
@@ -192,6 +196,7 @@ button:hover
 
 .myskills
 {
+    margin-top:5%;
     padding:20px;
 }
 
@@ -213,8 +218,10 @@ button:hover
 
 .progress-bar
 {
-    background-color: darkorange;
+    background-image: linear-gradient(to right, blue, rgb(74, 12, 145),rgba(164, 26, 199, 0.785));
 }
+
+
 /************************************ ---PORTFOLIO Statrs here-----******************************************/
 
 
@@ -252,7 +259,10 @@ button:hover
 .portfolio .project
 {
     background-color: whitesmoke;
-    border:7px solid rgba(245, 245, 245, 0.529);
+    border-width:10px;
+    border-style:solid;
+    background-image: linear-gradient(to right, blue, rgb(74, 12, 145),rgba(164, 26, 199, 0.785));
+    border-image:linear-gradient(to right, blue, rgb(74, 12, 145),rgba(164, 26, 199, 0.785));
     height: 20rem;
     border-radius:10px;
     box-sizing: border-box;
